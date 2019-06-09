@@ -12,13 +12,14 @@ For this problem, we didn’t want to just look at traditional structured data a
 <center><img src='model1_accident_locations.png'>
 <i>Map of traffic accident locations in the UK, 2013-2017</i>
 </center>
-  
-  
+
+ 
 **Model 2** uses satellite images of London that were scraped using Google Maps Static API and fed into a Convolutional Neural Network (CNN) in order to predict where traffic accidents are likely to occur.
 
-<center><img src='model2_satellite_image_examples.png'>
-<i>Example satellite images downloaded using the Google Maps Static API</i>
-</center>
+<p align="center">
+  <img src="'model2_satellite_image_examples.png">
+    <i>Example satellite images downloaded using the Google Maps Static API</i>
+</p>
 
 
 **Model 3** then makes use of Keras functional API to combine the top features from model 1 and the image features extracted from a CNN (similar to model 2) to create a mixed-input or mixed data model. Both data types are fed into separate deep learning models and their outputs are combined for the final layers in order to predict whether a given area is likely to have traffic accidents or not. 
