@@ -9,17 +9,15 @@ For this problem, we didn’t want to just look at traditional structured data a
 
 **Model 1** uses a combination of accident, population density and traffic data from the UK, where we focused on accidents in London.  Different machine learning models were built to see if the level of accident severity could be predicted.  
 
-<center><img src='model1_accident_locations.png'>
-<i>Map of traffic accident locations in the UK, 2013-2017</i>
+<center><img align='center' src='model1_accident_locations.png'>
+*Map of traffic accident locations in the UK, 2013-2017*
 </center>
-
- 
+  
+  
 **Model 2** uses satellite images of London that were scraped using Google Maps Static API and fed into a Convolutional Neural Network (CNN) in order to predict where traffic accidents are likely to occur.
 
-<p align="center">
-  <img src="'model2_satellite_image_examples.png">
-    <i>Example satellite images downloaded using the Google Maps Static API</i>
-</p>
+<center><img src='model2_satellite_image_examples.png'>
+*Example satellite images downloaded using the Google Maps Static API*
 
 
 **Model 3** then makes use of Keras functional API to combine the top features from model 1 and the image features extracted from a CNN (similar to model 2) to create a mixed-input or mixed data model. Both data types are fed into separate deep learning models and their outputs are combined for the final layers in order to predict whether a given area is likely to have traffic accidents or not. 
