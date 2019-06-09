@@ -11,17 +11,23 @@ For this problem, we didn’t want to just look at traditional structured data a
 
 <center><img src='model1_accident_locations.png'>
 <i>Map of traffic accident locations in the UK, 2013-2017</i>
-    
+</center>
+  
+  
 **Model 2** uses satellite images of London that were scraped using Google Maps Static API and fed into a Convolutional Neural Network (CNN) in order to predict where traffic accidents are likely to occur.
 
 <center><img src='model2_satellite_image_examples.png'>
 <i>Example satellite images downloaded using the Google Maps Static API</i>
+</center>
+
 
 **Model 3** then makes use of Keras functional API to combine the top features from model 1 and the image features extracted from a CNN (similar to model 2) to create a mixed-input or mixed data model. Both data types are fed into separate deep learning models and their outputs are combined for the final layers in order to predict whether a given area is likely to have traffic accidents or not. 
 
-<center><img src='mixed_model3_v3'>
+<center><img src='mixed_model3_v3.png'>
 <i>Model architecture of the mixed data neural network</i>
-    
+</center>
+
+
 
 ## Results
 
@@ -34,9 +40,9 @@ Overall, we were able to demonstrate that combining satellite images with struct
 
 The following notebooks show the steps we took in order to reach these findings:
 1. Cleaning the accident data
-2. Cleaning the traffic and population density data, merging this with the accident data, and downloading satellite images from the Google 3. Maps Static API
-4. Exploring the geographical distribution of the data, and comparing the characteristics of accidents of different levels of severity
-5. Exploring the changes in accident numbers over time, and investigating various other features of the accident dataset
-6. Model 1 - predicting traffic accident severity with structured data
-7. Model 2 - predicting traffic accident location from satellite imagery
-8. Model 3 - predicting traffic accident location using mixed data (satellite imagery and structured data)
+2. Cleaning the traffic and population density data, merging this with the accident data, and downloading satellite images from the Google Maps Static API
+3. Exploring the geographical distribution of the data, and comparing the characteristics of accidents of different levels of severity
+4. Exploring the changes in accident numbers over time, and investigating various other features of the accident dataset
+5. Model 1 - predicting traffic accident severity with structured data
+6. Model 2 - predicting traffic accident location from satellite imagery
+7. Model 3 - predicting traffic accident location using mixed data (satellite imagery and structured data)
