@@ -30,6 +30,7 @@ For this problem, we didn’t want to just look at traditional structured data a
  
 
 
+
 **Model 2** uses satellite images of London that were scraped using Google Maps Static API and fed into a Convolutional Neural Network (CNN) in order to predict where traffic accidents are likely to occur.
 
 
@@ -40,10 +41,8 @@ For this problem, we didn’t want to just look at traditional structured data a
 
 *Example satellite images downloaded using the Google Maps Static API*
 
-*
 
-
-*Model 3** then makes use of Keras functional API to combine the top features from model 1 and the image features extracted from a CNN (similar to model 2) to create a mixed-input or mixed data model. Both data types are fed into separate deep learning models and their outputs are combined for the final layers in order to predict whether a given area is likely to have traffic accidents or not.
+**Model 3** then makes use of Keras functional API to combine the top features from model 1 and the image features extracted from a CNN (similar to model 2) to create a mixed-input or mixed data model. Both data types are fed into separate deep learning models and their outputs are combined for the final layers in order to predict whether a given area is likely to have traffic accidents or not.
 
 
 
@@ -57,11 +56,11 @@ For this problem, we didn’t want to just look at traditional structured data a
 
 
 
+
 **Model 4** uses the same model architecture as model 3, but applies it to the task of distinguishing between areas with no traffic accidents and areas with serious or fatal traffic accidents, in order to predict the locations of the worst traffic accidents.
 
 
-![](model4_satellite_image_examples_serious
-.png)
+![](model4_serious_accident_examples.png)
 
 *Example satellite images of areas with serious or fatal accidents*
 
