@@ -47,7 +47,7 @@ For this problem, we didn’t want to just look at traditional structured data a
 
 
 
-![](model3_mixed_data_v3.png)
+![](model3_mixed_data.png)
 
 
 
@@ -70,7 +70,7 @@ For this problem, we didn’t want to just look at traditional structured data a
 
 
 
-Our findings showed that being able to predict accident severity was quite difficult due to the imbalance between slight, serious, and fatal accidents (58% accuracy).  Using satellite images with a CNN model yielded strong results in predicting traffic accident locations (77% accuracy). The mixed data model had an even higher accuracy (80%), producing better results from combining image features with structured data. There are also several promising options to improve the model further, beyond this initial proof of concept.
+Our findings showed that being able to predict accident severity was quite difficult due to the imbalance between slight, serious, and fatal accidents (58% accuracy).  Using satellite images with a CNN model yielded strong results in predicting traffic accident locations (77% accuracy). The mixed data model had an even higher accuracy (80% for no accidents vs. any accidents, and 82% for no accidents vs. serious or fatal accidents), producing better results from combining image features with structured data. There are also several promising options to improve the model further, beyond this initial proof of concept.
 
 
 
