@@ -7,7 +7,10 @@
 
 Each year about 1.25 million people die in road traffic accidents, and an additional 20-50 million are injured or disabled. If the locations of traffic accidents could be predicted, this could have a huge beneficial impact in potentially helping to reduce the number of accidents each year. For example, routing software could avoid the most dangerous areas - particularly in the context of the coming advent of driverless cars. It could also be useful in an insurance context, in order to predict risk, as well as for governments and local road authorities looking to create more efficient systems of road maintenance and improvements. The aim of this project is to predict where traffic accidents are likely to occur.
 
+For further detail, I've written a couple of blog posts on this project:
 
+- [Teaching a neural network to see roads](https://towardsdatascience.com/teaching-a-neural-network-to-see-roads-74bff240c3e5?source=friends_link&sk=9dddc26cbb967d8c549defee9096964a)
+- [Building a mixed-data neural network in Keras to predict accident locations](https://heartbeat.fritz.ai/building-a-mixed-data-neural-network-in-keras-to-predict-accident-locations-d51a63b738cf?source=friends_link&sk=15896bef6d338cdf7b0e859bdb4a3d55)
 
 
 
